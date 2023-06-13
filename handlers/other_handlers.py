@@ -1,12 +1,11 @@
 from aiogram import Router
 from aiogram.types import Message
-from lexicon.lexicon import LEXICON_RU
 
 router: Router = Router()
 
 
-# Хэндлер для сообщений, которые не попали в другие хэндлеры
+# Этот хэндлер будет реагировать на любые сообщения пользователя,
+# не предусмотренные логикой работы бота
 @router.message()
-async def send_answer(message: Message):
-    await message.answer(text=f"Я все о тебе знаю \n"
-                              f"Твой user_id = {message.from_user.id}")
+async def send_echo(message: Message):
+    await message.answer(f'Думаю стоит провериить свое сообщение)')

@@ -21,7 +21,7 @@ LEXICON_RU: dict[str, str] = {
                     'страницы\n\n/continue - продолжить чтение',
     'cancel_text': '/continue - продолжить чтение'}
 
-LEXICON_COMMANDS: dict[str, str] = {
+LEXICON_COMMANDS_RU: dict[str, str] = {
     '/beginning': 'В начало книги',
     '/continue': 'Продолжить чтение',
     '/bookmarks': 'Мои закладки',
