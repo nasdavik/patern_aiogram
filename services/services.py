@@ -1,6 +1,6 @@
 import random
 
-from lexicon.lexicon import LEXICON_RU
+from lexicon.lexicon import LEXICON
 
 
 # Функция, возвращающая случайный выбор бота в игре
@@ -11,8 +11,8 @@ def get_bot_choice() -> str:
 # Функция, возвращающая ключ из словаря, по которому
 # хранится значение, передаваемое как аргумент - выбор пользователя
 def _normalize_user_answer(user_answer: str) -> str:
-    for key in LEXICON_RU:
-        if LEXICON_RU[key] == user_answer:
+    for key in LEXICON:
+        if LEXICON[key] == user_answer:
             return key
     raise Exception
 

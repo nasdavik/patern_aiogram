@@ -28,7 +28,5 @@ def prepare_book(path: str) -> None:
             book[page+1] = answer[0].strip()
             start += answer[1]
 
-q = prepare_book(BOOK_PATH)
-pprint.pprint(book)
 # Вызов функции prepare_book для подготовки книги из текстового файла
 prepare_book(os.path.join(os.getcwd(), BOOK_PATH))
